@@ -1,0 +1,3 @@
+[submodule "SEC-EDGAR-text"]
+	path = SEC-EDGAR-text
+	url = https://github.com/alions7000/SEC-EDGAR-text
