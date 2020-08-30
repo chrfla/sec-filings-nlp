@@ -23,7 +23,8 @@ $ git clone https://github.com/chrfla/sec-filings-nlp
 ```
 
 #### Download files
-Make sure to edit the [_settings](https://github.com/chrfla/sec-filings-nlp/_settings.py) file and download all large files from GDrive (see separated README files in subfolders).
+Make sure to edit the [_settings](https://github.com/chrfla/sec-filings-nlp/_settings.py) file and download all large files from GDrive (see [README I](https://github.com/chrfla/sec-filings-nlp/blob/master/data/README.md) and [README II](https://github.com/chrfla/sec-filings-nlp/blob/master/data/sec-text/README.md) for more information).
+
 
 The credit rating data is retrieved from Capital IQ (via WRDS). Accessing this data requires a valid a WRDS subscription. You can insert your WRDS username in [_settings](https://github.com/chrfla/sec-filings-nlp/_settings.py), so the data can be downloaded automatically, when executing the Python scripts.
 
@@ -46,16 +47,16 @@ We recommend using a cloud computing instance (e.g., 24 CPUs and 100GB RAM) for 
 #### Python scripts
 
 `01_create_dataset.py`\
-This script retrieves the credit rating from Capital IQ, inserts the risk sections from 10-fillings and merges both components.
+This script retrieves the credit rating from Capital IQ, inserts the risk sections from 10K-fillings and merges both components.
 
 `02_clean_reports.py`\
-The script cleans the filings from undesired text, deletes too short risk sections and identifies incomplete sections.
+This script cleans the filings from undesired text, deletes too short risk sections and identifies incomplete sections.
 
 `03_descriptive_statistics.py`\
-The script visualizes the data and generates plots used in the thesis.
+This script visualizes the data and generates plots used in the thesis.
 
 `04_calculate_sim_diff.py`\
-The script calculates the Cosine similarity between two consecutive filings and extracts changed sentences. The later part is recommended to run on a cloud computing instance, to make use of the multiprocessing (approx. 3h runtime with 24 cores).
+This script calculates the Cosine similarity between two consecutive filings and extracts changed sentences. The later part is recommended to run on a cloud computing instance, to make use of multiprocessing (approx. 3h runtime with 24 cores).
 
 `05_train_sim.py`\
 This script trains various machine learning models on the Cosine similarity data and uses out-of-time validation to validate the results. It also generates confusion matrices, which are stored under [results/SIM](https://github.com/chrfla/sec-filings-nlp/tree/master/results/SIM).
@@ -91,9 +92,9 @@ Some useful utility functions and input files are stored under `assets/...`.
 
 
 #### Data
-Datasets generated from the Python scripts are store under `data/...`. Please refer to the [README file](https://github.com/chrfla/sec-filings-nlp/blob/master/data/README.md) for more information about downloading the finished datasets.
+Datasets generated from the Python scripts are store under `data/...`. Please refer to the [README](https://github.com/chrfla/sec-filings-nlp/blob/master/data/README.md) for more information about downloading the finished datasets.
 
-`data/sec-text/...` stores all SEC 10-filings used in this project. Please refer to the [README file](https://github.com/chrfla/sec-filings-nlp/blob/master/data/sec-text/README.md) for more information about downloading these files in a bulk.
+`data/sec-text/...` stores all SEC 10-filings used in this project. Please refer to the [README](https://github.com/chrfla/sec-filings-nlp/blob/master/data/sec-text/README.md) for more information about downloading these files in a bulk.
 
 `data/10K-word-embeddings/...` refers to a repository with a pre-trained Word2Vec model on 10K-filings, which is used in this project.
 
@@ -112,7 +113,7 @@ embed = Word2Vec.load(w2v_model_dest)
 
 
 #### Results
-The results are store in three main folders, with content described as follows:
+The results are store in three main folders with content described as follows:
 
 `results/SIM/...`
 - Cosine similarity
