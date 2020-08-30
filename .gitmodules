@@ -1,3 +1,6 @@
 [submodule "SEC-EDGAR-text"]
 	path = SEC-EDGAR-text
 	url = https://github.com/alions7000/SEC-EDGAR-text
+[submodule "data/10K-word-embeddings"]
+	path = data/10K-word-embeddings
+	url = https://github.com/ssehrawat/10K-word-embeddings
