@@ -23,10 +23,10 @@ $ git clone https://github.com/chrfla/sec-filings-nlp
 ```
 
 #### Download files
-Make sure to edit the [_settings](https://github.com/chrfla/sec-filings-nlp/_settings.py) file and download all large files from GDrive (see [README I](https://github.com/chrfla/sec-filings-nlp/blob/master/data/README.md) and [README II](https://github.com/chrfla/sec-filings-nlp/blob/master/data/sec-text/README.md) for more information).
+Make sure to edit the [_settings](https://github.com/chrfla/sec-filings-nlp/blob/master/_settings.py) file and download all large files from GDrive (see [README I](https://github.com/chrfla/sec-filings-nlp/blob/master/data/README.md) and [README II](https://github.com/chrfla/sec-filings-nlp/blob/master/data/sec-text/README.md) for more information).
 
 
-The credit rating data is retrieved from Capital IQ (via WRDS). Accessing this data requires a valid a WRDS subscription. You can insert your WRDS username in [_settings](https://github.com/chrfla/sec-filings-nlp/_settings.py), so the data can be downloaded automatically, when executing the Python scripts.
+The credit rating data is retrieved from Capital IQ (via WRDS). Accessing this data requires a valid a WRDS subscription. You can insert your WRDS username in [_settings](https://github.com/chrfla/sec-filings-nlp/blob/master/_settings.py), so the data can be downloaded automatically, when executing the Python scripts.
 
 #### Install packages
 
