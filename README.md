@@ -1,6 +1,6 @@
 # About the Project
 
-Master Thesis at BI Norwegian Business School (2020)
+Master Thesis at BI Norwegian Business School (2020) :mortar_board:
 
 **Title:** HIDDEN VALUE IN CORPORATE DISCLOSURE?
 Predicting downgrade in credit ratings based on risk factor sections in 10-K filings\
