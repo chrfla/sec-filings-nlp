@@ -138,6 +138,7 @@ def plot_changes_sentences (df):
 
 ####### Execute code below #########
     
+
 # Settings
 fontsize_ticks = 15
 fontsize_labels = 17

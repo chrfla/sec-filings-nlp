@@ -9,7 +9,7 @@ Predicting downgrade in credit ratings based on risk factor sections in 10-K fil
 #### Abstract
 With the emergence of Textual Analysis research and latest technological innovations in machine learning techniques, various studies have confirmed the predictive power of text-based corporate disclosure. This master thesis follows a recent call in academia to investigates the extent to which qualitative risk disclosure in 10-K filings can inform a machine learning based prediction model for a downgrade in credit ratings. Conceptualized as a potential mechanism to reduce information asymmetry in the principal-agent relationship of managers and shareholders, the focal thesis contributes to two academic fields, i.e., Textual Analysis and Management research. We utilize a variety of traditional and state-of-the-art Natural Language Processing and statistical learning algorithms. Our results suggest that the predictive power of qualitative risk disclosure in 10-K filings from 2006-2018 is limited with regard to credit rating downgrades. None of our models achieve a better performance than the simplest baseline models.
 
-Full-text is available [here](https://github.com/chrfla/sec-filings-nlp/Thesis.pdf).
+Full-text is available [here](https://github.com/chrfla/sec-filings-nlp/blob/master/Thesis.pdf).
 
 
 # Documentation
